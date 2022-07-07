@@ -232,19 +232,52 @@
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="318" id="f3X-WI-mZd"/>
                                                         </constraints>
-                                                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ZgR-Nb-GbK">
-                                                            <size key="itemSize" width="128" height="128"/>
+                                                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="10" id="ZgR-Nb-GbK">
+                                                            <size key="itemSize" width="200" height="318"/>
                                                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                            <inset key="sectionInset" minX="8" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                         </collectionViewFlowLayout>
                                                         <cells>
                                                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="iBi-T9-SQl">
-                                                                <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                                                <rect key="frame" x="8" y="0.0" width="200" height="318"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="NGN-B6-LFx">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="200" height="318"/>
                                                                     <autoresizingMask key="autoresizingMask"/>
+                                                                    <subviews>
+                                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KZi-SU-WVE">
+                                                                            <rect key="frame" x="8" y="8" width="184" height="260"/>
+                                                                            <constraints>
+                                                                                <constraint firstAttribute="height" constant="260" id="Ahm-hO-aZ2"/>
+                                                                            </constraints>
+                                                                        </imageView>
+                                                                        <stackView opaque="NO" contentMode="scaleToFill" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="Wn9-Ih-gYB">
+                                                                            <rect key="frame" x="8" y="272" width="184" height="19.5"/>
+                                                                            <subviews>
+                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="&lt;titleLabel&gt;" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EAp-Y1-MqS">
+                                                                                    <rect key="frame" x="0.0" y="0.0" width="92.5" height="19.5"/>
+                                                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                                                    <nil key="textColor"/>
+                                                                                    <nil key="highlightedColor"/>
+                                                                                </label>
+                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="750" verticalHuggingPriority="251" text="&lt;dateLabel&gt;" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EQz-dQ-KN4">
+                                                                                    <rect key="frame" x="92.5" y="0.0" width="91.5" height="19.5"/>
+                                                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                                                    <color key="textColor" red="0.70196086170000005" green="0.7019608021" blue="0.70196086170000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                                    <nil key="highlightedColor"/>
+                                                                                </label>
+                                                                            </subviews>
+                                                                        </stackView>
+                                                                    </subviews>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="trailing" secondItem="Wn9-Ih-gYB" secondAttribute="trailing" constant="8" id="Djy-uq-qFc"/>
+                                                                        <constraint firstAttribute="trailing" secondItem="KZi-SU-WVE" secondAttribute="trailing" constant="8" id="MOB-HB-u3y"/>
+                                                                        <constraint firstItem="KZi-SU-WVE" firstAttribute="leading" secondItem="NGN-B6-LFx" secondAttribute="leading" constant="8" id="Qez-wj-B6P"/>
+                                                                        <constraint firstItem="Wn9-Ih-gYB" firstAttribute="top" secondItem="KZi-SU-WVE" secondAttribute="bottom" constant="4" id="RvW-Eo-day"/>
+                                                                        <constraint firstItem="KZi-SU-WVE" firstAttribute="top" secondItem="NGN-B6-LFx" secondAttribute="top" constant="8" id="dtB-fT-lsO"/>
+                                                                        <constraint firstItem="Wn9-Ih-gYB" firstAttribute="leading" secondItem="NGN-B6-LFx" secondAttribute="leading" constant="8" id="gzh-op-vtZ"/>
+                                                                    </constraints>
                                                                 </collectionViewCellContentView>
                                                             </collectionViewCell>
                                                         </cells>

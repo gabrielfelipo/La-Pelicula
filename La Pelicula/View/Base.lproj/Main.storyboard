@@ -12,7 +12,7 @@
         <!--Featured-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController title="Featured" id="BYZ-38-t0r" customClass="ViewController" customModule="La_Pelicula" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Featured" id="BYZ-38-t0r" customClass="FeaturedViewController" customModule="La_Pelicula" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="1341"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -67,7 +67,7 @@
                                                             <inset key="sectionInset" minX="8" minY="0.0" maxX="8" maxY="0.0"/>
                                                         </collectionViewFlowLayout>
                                                         <cells>
-                                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="fb6-x6-h4q">
+                                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="popularCell" id="fb6-x6-h4q" customClass="PopularCollectionViewCell" customModule="La_Pelicula" customModuleProvider="target">
                                                                 <rect key="frame" x="8" y="0.0" width="200" height="140"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="leS-WK-uD7">
@@ -94,6 +94,10 @@
                                                                         <constraint firstItem="1Q6-uW-Ht2" firstAttribute="top" secondItem="KNu-AC-EDK" secondAttribute="bottom" constant="4" id="t3r-lq-kZ7"/>
                                                                     </constraints>
                                                                 </collectionViewCellContentView>
+                                                                <connections>
+                                                                    <outlet property="Title" destination="1Q6-uW-Ht2" id="3EP-LH-zh7"/>
+                                                                    <outlet property="image" destination="KNu-AC-EDK" id="s2J-fS-uA0"/>
+                                                                </connections>
                                                             </collectionViewCell>
                                                         </cells>
                                                     </collectionView>
@@ -144,7 +148,7 @@
                                                             <inset key="sectionInset" minX="16" minY="0.0" maxX="16" maxY="0.0"/>
                                                         </collectionViewFlowLayout>
                                                         <cells>
-                                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="MYh-z2-LgB">
+                                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="MYh-z2-LgB" customClass="NowPlayingCollectionViewCell" customModule="La_Pelicula" customModuleProvider="target">
                                                                 <rect key="frame" x="16" y="0.0" width="251" height="114"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="4MB-o0-Y6y">
@@ -190,6 +194,11 @@
                                                                         <constraint firstAttribute="trailing" secondItem="Ty0-HS-EZg" secondAttribute="trailing" id="u2L-wO-8oA"/>
                                                                     </constraints>
                                                                 </collectionViewCellContentView>
+                                                                <connections>
+                                                                    <outlet property="Date" destination="RQD-3A-w2J" id="Kmx-8W-3bs"/>
+                                                                    <outlet property="Image" destination="ydq-Gd-t0U" id="qCF-Ha-gQ2"/>
+                                                                    <outlet property="Title" destination="wr2-bR-krx" id="Bma-y6-OT4"/>
+                                                                </connections>
                                                             </collectionViewCell>
                                                         </cells>
                                                     </collectionView>
@@ -236,7 +245,7 @@
                                                             <size key="itemSize" width="200" height="318"/>
                                                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                                            <inset key="sectionInset" minX="8" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                            <inset key="sectionInset" minX="8" minY="0.0" maxX="8" maxY="0.0"/>
                                                         </collectionViewFlowLayout>
                                                         <cells>
                                                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="iBi-T9-SQl">
@@ -309,6 +318,10 @@
                     </view>
                     <navigationItem key="navigationItem" title="Featured" id="U6C-vc-e2H"/>
                     <size key="freeformSize" width="414" height="1341"/>
+                    <connections>
+                        <outlet property="nowPlayingCollectionView" destination="I6h-bs-V5C" id="etz-7P-TIz"/>
+                        <outlet property="popularCollectionView" destination="upf-gm-YTe" id="WQ1-WW-vud"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

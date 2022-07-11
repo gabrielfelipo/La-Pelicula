@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		CA8898B52874B13F007E8CD5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8898B42874B13F007E8CD5 /* AppDelegate.swift */; };
 		CA8898B72874B13F007E8CD5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8898B62874B13F007E8CD5 /* SceneDelegate.swift */; };
-		CA8898B92874B13F007E8CD5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8898B82874B13F007E8CD5 /* ViewController.swift */; };
+		CA8898B92874B13F007E8CD5 /* FeaturedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8898B82874B13F007E8CD5 /* FeaturedViewController.swift */; };
 		CA8898BC2874B13F007E8CD5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA8898BA2874B13F007E8CD5 /* Main.storyboard */; };
 		CA8898BE2874B141007E8CD5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA8898BD2874B141007E8CD5 /* Assets.xcassets */; };
 		CA8898C12874B141007E8CD5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA8898BF2874B141007E8CD5 /* LaunchScreen.storyboard */; };
+		CA983483287C980A00AC7278 /* PopularCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA983482287C980A00AC7278 /* PopularCollectionViewCell.swift */; };
+		CA983485287C984A00AC7278 /* NowPlayingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA983484287C984A00AC7278 /* NowPlayingCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CA8898B12874B13F007E8CD5 /* La Pelicula.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "La Pelicula.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA8898B42874B13F007E8CD5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CA8898B62874B13F007E8CD5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CA8898B82874B13F007E8CD5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CA8898B82874B13F007E8CD5 /* FeaturedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedViewController.swift; sourceTree = "<group>"; };
 		CA8898BB2874B13F007E8CD5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CA8898BD2874B141007E8CD5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CA8898C02874B141007E8CD5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CA8898C22874B141007E8CD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA983482287C980A00AC7278 /* PopularCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularCollectionViewCell.swift; sourceTree = "<group>"; };
+		CA983484287C984A00AC7278 /* NowPlayingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowPlayingCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +62,39 @@
 			children = (
 				CA8898B42874B13F007E8CD5 /* AppDelegate.swift */,
 				CA8898B62874B13F007E8CD5 /* SceneDelegate.swift */,
-				CA8898B82874B13F007E8CD5 /* ViewController.swift */,
-				CA8898BA2874B13F007E8CD5 /* Main.storyboard */,
-				CA8898BD2874B141007E8CD5 /* Assets.xcassets */,
-				CA8898BF2874B141007E8CD5 /* LaunchScreen.storyboard */,
+				CA983487287C9A1100AC7278 /* Controllers */,
+				CA983486287C99FA00AC7278 /* View */,
+				CA983488287CA0AF00AC7278 /* SupportingFiles */,
 				CA8898C22874B141007E8CD5 /* Info.plist */,
 			);
 			path = "La Pelicula";
+			sourceTree = "<group>";
+		};
+		CA983486287C99FA00AC7278 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CA8898BF2874B141007E8CD5 /* LaunchScreen.storyboard */,
+				CA8898BA2874B13F007E8CD5 /* Main.storyboard */,
+				CA983482287C980A00AC7278 /* PopularCollectionViewCell.swift */,
+				CA983484287C984A00AC7278 /* NowPlayingCollectionViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CA983487287C9A1100AC7278 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CA8898B82874B13F007E8CD5 /* FeaturedViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		CA983488287CA0AF00AC7278 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				CA8898BD2874B141007E8CD5 /* Assets.xcassets */,
+			);
+			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +168,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA8898B92874B13F007E8CD5 /* ViewController.swift in Sources */,
+				CA983485287C984A00AC7278 /* NowPlayingCollectionViewCell.swift in Sources */,
+				CA983483287C980A00AC7278 /* PopularCollectionViewCell.swift in Sources */,
+				CA8898B92874B13F007E8CD5 /* FeaturedViewController.swift in Sources */,
 				CA8898B52874B13F007E8CD5 /* AppDelegate.swift in Sources */,
 				CA8898B72874B13F007E8CD5 /* SceneDelegate.swift in Sources */,
 			);

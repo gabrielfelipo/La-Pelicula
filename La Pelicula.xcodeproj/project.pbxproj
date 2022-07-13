@@ -22,6 +22,9 @@
 		CAB271B7287DF4EE00A34035 /* Movie+TrendingThisWeek.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB271B2287DF4EE00A34035 /* Movie+TrendingThisWeek.swift */; };
 		CAB271B8287DF4EE00A34035 /* Movie+TrendingToday.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB271B3287DF4EE00A34035 /* Movie+TrendingToday.swift */; };
 		CAB271BA287E145000A34035 /* FeaturedViewController+UICollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB271B9287E145000A34035 /* FeaturedViewController+UICollectionViewDataSource.swift */; };
+		CAB271BC287F3B5E00A34035 /* UpcomingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB271BB287F3B5E00A34035 /* UpcomingCollectionViewCell.swift */; };
+		CAB271BE287F3F0300A34035 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB271BD287F3F0300A34035 /* DetailsViewController.swift */; };
+		CAB271C0287F47E400A34035 /* FeaturedViewController+UICollectionViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB271BF287F47E400A34035 /* FeaturedViewController+UICollectionViewDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +45,9 @@
 		CAB271B2287DF4EE00A34035 /* Movie+TrendingThisWeek.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Movie+TrendingThisWeek.swift"; sourceTree = "<group>"; };
 		CAB271B3287DF4EE00A34035 /* Movie+TrendingToday.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Movie+TrendingToday.swift"; sourceTree = "<group>"; };
 		CAB271B9287E145000A34035 /* FeaturedViewController+UICollectionViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FeaturedViewController+UICollectionViewDataSource.swift"; sourceTree = "<group>"; };
+		CAB271BB287F3B5E00A34035 /* UpcomingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingCollectionViewCell.swift; sourceTree = "<group>"; };
+		CAB271BD287F3F0300A34035 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		CAB271BF287F47E400A34035 /* FeaturedViewController+UICollectionViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FeaturedViewController+UICollectionViewDelegate.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +98,7 @@
 				CA8898BA2874B13F007E8CD5 /* Main.storyboard */,
 				CA983482287C980A00AC7278 /* PopularCollectionViewCell.swift */,
 				CA983484287C984A00AC7278 /* NowPlayingCollectionViewCell.swift */,
+				CAB271BB287F3B5E00A34035 /* UpcomingCollectionViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -101,6 +108,8 @@
 			children = (
 				CA8898B82874B13F007E8CD5 /* FeaturedViewController.swift */,
 				CAB271B9287E145000A34035 /* FeaturedViewController+UICollectionViewDataSource.swift */,
+				CAB271BF287F47E400A34035 /* FeaturedViewController+UICollectionViewDelegate.swift */,
+				CAB271BD287F3F0300A34035 /* DetailsViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -200,6 +209,7 @@
 				CA983485287C984A00AC7278 /* NowPlayingCollectionViewCell.swift in Sources */,
 				CA983483287C980A00AC7278 /* PopularCollectionViewCell.swift in Sources */,
 				CAB271B8287DF4EE00A34035 /* Movie+TrendingToday.swift in Sources */,
+				CAB271BC287F3B5E00A34035 /* UpcomingCollectionViewCell.swift in Sources */,
 				CAB271B6287DF4EE00A34035 /* Movie+Popular.swift in Sources */,
 				CAB271BA287E145000A34035 /* FeaturedViewController+UICollectionViewDataSource.swift in Sources */,
 				CAB271AE287DEE4700A34035 /* Movie.swift in Sources */,
@@ -207,6 +217,8 @@
 				CAB271B7287DF4EE00A34035 /* Movie+TrendingThisWeek.swift in Sources */,
 				CAB271B5287DF4EE00A34035 /* Movie+Upcoming.swift in Sources */,
 				CA8898B52874B13F007E8CD5 /* AppDelegate.swift in Sources */,
+				CAB271C0287F47E400A34035 /* FeaturedViewController+UICollectionViewDelegate.swift in Sources */,
+				CAB271BE287F3F0300A34035 /* DetailsViewController.swift in Sources */,
 				CAB271B4287DF4EE00A34035 /* Movie+NowPlaying.swift in Sources */,
 				CA8898B72874B13F007E8CD5 /* SceneDelegate.swift in Sources */,
 			);

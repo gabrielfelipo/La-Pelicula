@@ -13,4 +13,11 @@ class PopularCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var image: UIImageView!
     @IBOutlet weak var Title: UILabel!
+    
+    func setup(title:String, image: UIImage){
+        Title.text = title
+        self.image.image = image
+        self.image.layer.cornerRadius = 8
+    }
+    
 }

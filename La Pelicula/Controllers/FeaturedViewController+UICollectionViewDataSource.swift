@@ -24,55 +24,6 @@ extension FeaturedViewController: UICollectionViewDataSource  {
         }
     }
     
-    fileprivate func makePopularCell(_ indexPath: IndexPath) -> PopularCollectionViewCell {
-        if let cell = popularCollectionView.dequeueReusableCell(withReuseIdentifier: PopularCollectionViewCell.cellIdentifier, for: indexPath) as? PopularCollectionViewCell {
-            
-            let movie = popularMovies[indexPath.item]
-            
-            cell.Title.text = movie.title
-            cell.image.image = UIImage(named: movie.backdrop)
-            
-            return cell
-        }
-        return PopularCollectionViewCell()
-    }
-    
-    fileprivate func makePlayingCell(_ indexPath: IndexPath) -> NowPlayingCollectionViewCell {
-        if let cell = nowPlayingCollectionView.dequeueReusableCell(withReuseIdentifier: NowPlayingCollectionViewCell.cellIdentifier, for: indexPath) as? NowPlayingCollectionViewCell {
-            
-            let movie = nowPlayingMovies[indexPath.item]
-            
-            cell.Title.text = movie.title
-            cell.Image.image = UIImage(named: movie.poster)
-            cell.Date.text = String(movie.releaseDate.prefix(4))
-            return cell
-        }
-        return NowPlayingCollectionViewCell()
-    }
-    
-    
-    fileprivate func makeUpcomingCell(_ indexPath: IndexPath) -> UICollectionViewCell {
-        if let cell = upcomingCollectionView.dequeueReusableCell(withReuseIdentifier: UpcomingCollectionViewCell.cellIdentifier, for: indexPath) as? UpcomingCollectionViewCell {
-            
-            let movie = upcomingMovies[indexPath.item]
-            
-            cell.titleLabel.text = movie.title
-            cell.imageView.image = UIImage(named: movie.poster)
-            
-            let meses = ["Jan","Fev","Mar","Abr","Mai","Jun","Jul","Ago","Set","Out","Nov","Dez"]
-            var date = String(movie.releaseDate.prefix(7))
-            let dateInt = Int(date.suffix(2))
-            let day = Int(movie.releaseDate.suffix(2))
-            let dateLetra = day?.codingKey.stringValue
-            date = meses[dateInt ?? 0] + " " + (dateLetra ?? "")
-            
-            cell.dateLabel.text = date
-            
-            return cell
-        }
-        return PopularCollectionViewCell()
-    }
-    
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         if collectionView == popularCollectionView {
@@ -86,4 +37,61 @@ extension FeaturedViewController: UICollectionViewDataSource  {
         }
         return UICollectionViewCell()
     }
+    
+    fileprivate func makePopularCell(_ indexPath: IndexPath) -> PopularCollectionViewCell {
+        if let cell = popularCollectionView.dequeueReusableCell(withReuseIdentifier: PopularCollectionViewCell.cellIdentifier, for: indexPath) as? PopularCollectionViewCell {
+            
+            let movie = popularMovies[indexPath.item]
+            
+            Task {
+                let imageData = await Movie.downloadImageData(withPath: movie.backdropPath)
+                let imagem = UIImage(data: imageData) ?? UIImage()
+                cell.setup(title: movie.title, image: imagem)
+            }
+            
+            return cell
+        }
+        return PopularCollectionViewCell()
+    }
+    
+    fileprivate func makePlayingCell(_ indexPath: IndexPath) -> NowPlayingCollectionViewCell {
+        if let cell = nowPlayingCollectionView.dequeueReusableCell(withReuseIdentifier: NowPlayingCollectionViewCell.cellIdentifier, for: indexPath) as? NowPlayingCollectionViewCell {
+            
+            let movie = nowPlayingMovies[indexPath.item]
+            
+            Task {
+                let imageData = await Movie.downloadImageData(withPath: movie.posterPath)
+                let imagem = UIImage(data: imageData) ?? UIImage()
+                cell.setup(title: movie.title, year: String(movie.releaseDate.prefix(4)), image: imagem)
+            }
+            
+            return cell
+        }
+        return NowPlayingCollectionViewCell()
+    }
+    
+    
+    fileprivate func makeUpcomingCell(_ indexPath: IndexPath) -> UICollectionViewCell {
+        if let cell = upcomingCollectionView.dequeueReusableCell(withReuseIdentifier: UpcomingCollectionViewCell.cellIdentifier, for: indexPath) as? UpcomingCollectionViewCell {
+            
+            let movie = upcomingMovies[indexPath.item]
+            
+            let meses = ["Jan","Fev","Mar","Abr","Mai","Jun","Jul","Ago","Set","Out","Nov","Dez"]
+            var date = String(movie.releaseDate.prefix(7))
+            let dateInt = Int(date.suffix(2))
+            let day = Int(movie.releaseDate.suffix(2))
+            let dateLetra = day?.codingKey.stringValue
+            date = meses[dateInt ?? 0] + " " + (dateLetra ?? "")
+            
+            Task {
+                let imageData = await Movie.downloadImageData(withPath: movie.backdropPath)
+                let imagem = UIImage(data: imageData) ?? UIImage()
+                cell.setup(title: movie.title, year: date, image: imagem)
+            }
+            
+            return cell
+        }
+        return PopularCollectionViewCell()
+    }
+    
 }

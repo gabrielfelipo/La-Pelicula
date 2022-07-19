@@ -14,4 +14,11 @@ class NowPlayingCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var Image: UIImageView!
     @IBOutlet weak var Date: UILabel!
     @IBOutlet weak var Title: UILabel!
+    
+    func setup(title:String, year:String ,image: UIImage){
+        Title.text = title
+        Date.text = year
+        Image.image = image
+        self.Image.layer.cornerRadius = 8
+    }
 }

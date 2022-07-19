@@ -16,5 +16,15 @@ struct Movie: Codable{
     let overview: String
     let genres: [Int]?
     let id: Int
-    let size: Int?
+}
+
+
+struct MovieDetails: Codable {
+    let runtime: Int
+    let genres: [GenresDetails]
+}
+
+struct GenresDetails: Codable {
+    let id: Int
+    let name: String
 }

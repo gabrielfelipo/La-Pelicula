@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CA3FB3E02886F171002CFF29 /* PosterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3FB3DF2886F171002CFF29 /* PosterViewController.swift */; };
 		CA8898B52874B13F007E8CD5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8898B42874B13F007E8CD5 /* AppDelegate.swift */; };
 		CA8898B72874B13F007E8CD5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8898B62874B13F007E8CD5 /* SceneDelegate.swift */; };
 		CA8898B92874B13F007E8CD5 /* FeaturedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8898B82874B13F007E8CD5 /* FeaturedViewController.swift */; };
@@ -16,11 +17,6 @@
 		CA983483287C980A00AC7278 /* PopularCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA983482287C980A00AC7278 /* PopularCollectionViewCell.swift */; };
 		CA983485287C984A00AC7278 /* NowPlayingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA983484287C984A00AC7278 /* NowPlayingCollectionViewCell.swift */; };
 		CAB271AE287DEE4700A34035 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB271AD287DEE4700A34035 /* Movie.swift */; };
-		CAB271B4287DF4EE00A34035 /* Movie+NowPlaying.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB271AF287DF4EE00A34035 /* Movie+NowPlaying.swift */; };
-		CAB271B5287DF4EE00A34035 /* Movie+Upcoming.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB271B0287DF4EE00A34035 /* Movie+Upcoming.swift */; };
-		CAB271B6287DF4EE00A34035 /* Movie+Popular.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB271B1287DF4EE00A34035 /* Movie+Popular.swift */; };
-		CAB271B7287DF4EE00A34035 /* Movie+TrendingThisWeek.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB271B2287DF4EE00A34035 /* Movie+TrendingThisWeek.swift */; };
-		CAB271B8287DF4EE00A34035 /* Movie+TrendingToday.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB271B3287DF4EE00A34035 /* Movie+TrendingToday.swift */; };
 		CAB271BA287E145000A34035 /* FeaturedViewController+UICollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB271B9287E145000A34035 /* FeaturedViewController+UICollectionViewDataSource.swift */; };
 		CAB271BC287F3B5E00A34035 /* UpcomingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB271BB287F3B5E00A34035 /* UpcomingCollectionViewCell.swift */; };
 		CAB271BE287F3F0300A34035 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB271BD287F3F0300A34035 /* DetailsViewController.swift */; };
@@ -31,6 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CA3FB3DF2886F171002CFF29 /* PosterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PosterViewController.swift; sourceTree = "<group>"; };
 		CA8898B12874B13F007E8CD5 /* La Pelicula.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "La Pelicula.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA8898B42874B13F007E8CD5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CA8898B62874B13F007E8CD5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -42,11 +39,6 @@
 		CA983482287C980A00AC7278 /* PopularCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularCollectionViewCell.swift; sourceTree = "<group>"; };
 		CA983484287C984A00AC7278 /* NowPlayingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowPlayingCollectionViewCell.swift; sourceTree = "<group>"; };
 		CAB271AD287DEE4700A34035 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
-		CAB271AF287DF4EE00A34035 /* Movie+NowPlaying.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Movie+NowPlaying.swift"; sourceTree = "<group>"; };
-		CAB271B0287DF4EE00A34035 /* Movie+Upcoming.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Movie+Upcoming.swift"; sourceTree = "<group>"; };
-		CAB271B1287DF4EE00A34035 /* Movie+Popular.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Movie+Popular.swift"; sourceTree = "<group>"; };
-		CAB271B2287DF4EE00A34035 /* Movie+TrendingThisWeek.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Movie+TrendingThisWeek.swift"; sourceTree = "<group>"; };
-		CAB271B3287DF4EE00A34035 /* Movie+TrendingToday.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Movie+TrendingToday.swift"; sourceTree = "<group>"; };
 		CAB271B9287E145000A34035 /* FeaturedViewController+UICollectionViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FeaturedViewController+UICollectionViewDataSource.swift"; sourceTree = "<group>"; };
 		CAB271BB287F3B5E00A34035 /* UpcomingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingCollectionViewCell.swift; sourceTree = "<group>"; };
 		CAB271BD287F3F0300A34035 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
@@ -116,6 +108,7 @@
 				CAB271B9287E145000A34035 /* FeaturedViewController+UICollectionViewDataSource.swift */,
 				CAB271BF287F47E400A34035 /* FeaturedViewController+UICollectionViewDelegate.swift */,
 				CAB271BD287F3F0300A34035 /* DetailsViewController.swift */,
+				CA3FB3DF2886F171002CFF29 /* PosterViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -134,11 +127,6 @@
 			children = (
 				CAB271AD287DEE4700A34035 /* Movie.swift */,
 				CAB271C32881EC5100A34035 /* Movie+API.swift */,
-				CAB271AF287DF4EE00A34035 /* Movie+NowPlaying.swift */,
-				CAB271B1287DF4EE00A34035 /* Movie+Popular.swift */,
-				CAB271B2287DF4EE00A34035 /* Movie+TrendingThisWeek.swift */,
-				CAB271B3287DF4EE00A34035 /* Movie+TrendingToday.swift */,
-				CAB271B0287DF4EE00A34035 /* Movie+Upcoming.swift */,
 				CAB271C52881F8D900A34035 /* MovieResponse.swift */,
 			);
 			path = Model;
@@ -218,19 +206,15 @@
 			files = (
 				CA983485287C984A00AC7278 /* NowPlayingCollectionViewCell.swift in Sources */,
 				CA983483287C980A00AC7278 /* PopularCollectionViewCell.swift in Sources */,
-				CAB271B8287DF4EE00A34035 /* Movie+TrendingToday.swift in Sources */,
 				CAB271BC287F3B5E00A34035 /* UpcomingCollectionViewCell.swift in Sources */,
-				CAB271B6287DF4EE00A34035 /* Movie+Popular.swift in Sources */,
 				CAB271BA287E145000A34035 /* FeaturedViewController+UICollectionViewDataSource.swift in Sources */,
 				CAB271AE287DEE4700A34035 /* Movie.swift in Sources */,
 				CA8898B92874B13F007E8CD5 /* FeaturedViewController.swift in Sources */,
-				CAB271B7287DF4EE00A34035 /* Movie+TrendingThisWeek.swift in Sources */,
-				CAB271B5287DF4EE00A34035 /* Movie+Upcoming.swift in Sources */,
 				CA8898B52874B13F007E8CD5 /* AppDelegate.swift in Sources */,
+				CA3FB3E02886F171002CFF29 /* PosterViewController.swift in Sources */,
 				CAB271C0287F47E400A34035 /* FeaturedViewController+UICollectionViewDelegate.swift in Sources */,
 				CAB271BE287F3F0300A34035 /* DetailsViewController.swift in Sources */,
 				CAB271C62881F8D900A34035 /* MovieResponse.swift in Sources */,
-				CAB271B4287DF4EE00A34035 /* Movie+NowPlaying.swift in Sources */,
 				CA8898B72874B13F007E8CD5 /* SceneDelegate.swift in Sources */,
 				CAB271C42881EC5100A34035 /* Movie+API.swift in Sources */,
 			);

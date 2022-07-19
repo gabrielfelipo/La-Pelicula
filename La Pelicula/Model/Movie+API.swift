@@ -84,7 +84,7 @@ extension Movie {
         return[]
     }
     
-    static func detailsMoviesAPI(_ movieId: Int) async -> [Movie] {
+    static func detailsMoviesAPI(_ movieId: Int) async -> MovieDetails {
         
         var components = Movie.urlComponents
         components.path = "/3/movie/\(movieId)"
@@ -99,13 +99,13 @@ extension Movie {
             
             let decoder = JSONDecoder()
             decoder.keyDecodingStrategy = .convertFromSnakeCase
-            let movieResult = try decoder.decode(MoviesResponse.self, from: data)
+            let movieResult = try decoder.decode(MovieDetails.self, from: data)
             
-            return movieResult.results
+            return movieResult
         } catch {
             print(error)
         }
-        return[]
+        return MovieDetails(runtime: 0, genres: [])
     }
     
     // MARK: - Download de imagens

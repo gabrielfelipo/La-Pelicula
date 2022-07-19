@@ -91,7 +91,7 @@ extension FeaturedViewController: UICollectionViewDataSource  {
             
             return cell
         }
-        return PopularCollectionViewCell()
+        return UpcomingCollectionViewCell()
     }
     
 }

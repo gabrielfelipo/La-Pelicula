@@ -20,6 +20,7 @@ class FeaturedViewController: UIViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        overrideUserInterfaceStyle = .dark
         // Do any additional setup after loading the view.
         
         popularCollectionView.dataSource = self
@@ -45,7 +46,7 @@ class FeaturedViewController: UIViewController{
             self.upcomingCollectionView.reloadData()
         }
         
-        overrideUserInterfaceStyle = .dark
+        
         
     }
     

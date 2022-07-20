@@ -75,11 +75,9 @@ class DetailsViewController: UIViewController {
         //backdropImage.image = UIImage(named: movie.backdropPath)
         titleLabel.text = movie.title
         //posterImage.image = UIImage(named: movie.posterPath)
-        ratingLabel.text = "Rating: \(movie.voteAverage)/10"
+        ratingLabel.text = "Rating: \(round(movie.voteAverage*10)/10)/10"
         overviewLabel.text = movie.overview
         
-        for genrer in movie.genres ?? [] {
-        }
         
     }
     

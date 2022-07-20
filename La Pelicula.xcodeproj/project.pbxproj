@@ -12,6 +12,8 @@
 		CA3FB3E428874840002CFF29 /* SeeAllTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3FB3E328874840002CFF29 /* SeeAllTableViewCell.swift */; };
 		CA3FB3E628875D51002CFF29 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3FB3E528875D51002CFF29 /* SearchViewController.swift */; };
 		CA3FB3E828876068002CFF29 /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3FB3E728876068002CFF29 /* SearchTableViewCell.swift */; };
+		CA3FB3EA2887AE50002CFF29 /* TrendingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3FB3E92887AE4F002CFF29 /* TrendingTableViewCell.swift */; };
+		CA3FB3EC2887AE66002CFF29 /* TrendingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3FB3EB2887AE66002CFF29 /* TrendingViewController.swift */; };
 		CA8898B52874B13F007E8CD5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8898B42874B13F007E8CD5 /* AppDelegate.swift */; };
 		CA8898B72874B13F007E8CD5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8898B62874B13F007E8CD5 /* SceneDelegate.swift */; };
 		CA8898B92874B13F007E8CD5 /* FeaturedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8898B82874B13F007E8CD5 /* FeaturedViewController.swift */; };
@@ -36,6 +38,8 @@
 		CA3FB3E328874840002CFF29 /* SeeAllTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeAllTableViewCell.swift; sourceTree = "<group>"; };
 		CA3FB3E528875D51002CFF29 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		CA3FB3E728876068002CFF29 /* SearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
+		CA3FB3E92887AE4F002CFF29 /* TrendingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingTableViewCell.swift; sourceTree = "<group>"; };
+		CA3FB3EB2887AE66002CFF29 /* TrendingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingViewController.swift; sourceTree = "<group>"; };
 		CA8898B12874B13F007E8CD5 /* La Pelicula.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "La Pelicula.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA8898B42874B13F007E8CD5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CA8898B62874B13F007E8CD5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -107,6 +111,7 @@
 				CAB271BB287F3B5E00A34035 /* UpcomingCollectionViewCell.swift */,
 				CA3FB3E328874840002CFF29 /* SeeAllTableViewCell.swift */,
 				CA3FB3E728876068002CFF29 /* SearchTableViewCell.swift */,
+				CA3FB3E92887AE4F002CFF29 /* TrendingTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -121,6 +126,7 @@
 				CA3FB3DF2886F171002CFF29 /* PosterViewController.swift */,
 				CA3FB3E128874821002CFF29 /* SeeAllViewController.swift */,
 				CA3FB3E528875D51002CFF29 /* SearchViewController.swift */,
+				CA3FB3EB2887AE66002CFF29 /* TrendingViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -218,10 +224,12 @@
 			files = (
 				CA983485287C984A00AC7278 /* NowPlayingCollectionViewCell.swift in Sources */,
 				CA983483287C980A00AC7278 /* PopularCollectionViewCell.swift in Sources */,
+				CA3FB3EA2887AE50002CFF29 /* TrendingTableViewCell.swift in Sources */,
 				CAB271BC287F3B5E00A34035 /* UpcomingCollectionViewCell.swift in Sources */,
 				CAB271BA287E145000A34035 /* FeaturedViewController+UICollectionViewDataSource.swift in Sources */,
 				CAB271AE287DEE4700A34035 /* Movie.swift in Sources */,
 				CA8898B92874B13F007E8CD5 /* FeaturedViewController.swift in Sources */,
+				CA3FB3EC2887AE66002CFF29 /* TrendingViewController.swift in Sources */,
 				CA3FB3E228874821002CFF29 /* SeeAllViewController.swift in Sources */,
 				CA8898B52874B13F007E8CD5 /* AppDelegate.swift in Sources */,
 				CA3FB3E02886F171002CFF29 /* PosterViewController.swift in Sources */,

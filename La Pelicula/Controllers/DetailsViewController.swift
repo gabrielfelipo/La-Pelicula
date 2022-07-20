@@ -58,13 +58,13 @@ class DetailsViewController: UIViewController {
         self.title = String(movie.title)
         
         Task {
-            let imageData = await Movie.downloadImageData(withPath: movie.backdropPath)
+            let imageData = await Movie.downloadImageData(withPath: movie.backdropPath ?? "")
             let imagem = UIImage(data: imageData) ?? UIImage()
             backdropImage.image = imagem
         }
         
         Task {
-            let imageData = await Movie.downloadImageData(withPath: movie.posterPath)
+            let imageData = await Movie.downloadImageData(withPath: movie.posterPath ?? "")
             let imagem = UIImage(data: imageData) ?? UIImage()
             posterImage.image = imagem
             posterImage.layer.cornerRadius = 8

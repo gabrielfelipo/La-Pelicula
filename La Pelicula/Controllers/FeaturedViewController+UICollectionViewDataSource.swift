@@ -44,7 +44,7 @@ extension FeaturedViewController: UICollectionViewDataSource  {
             let movie = popularMovies[indexPath.item]
             
             Task {
-                let imageData = await Movie.downloadImageData(withPath: movie.backdropPath)
+                let imageData = await Movie.downloadImageData(withPath: movie.backdropPath ?? "")
                 let imagem = UIImage(data: imageData) ?? UIImage()
                 cell.setup(title: movie.title, image: imagem)
             }
@@ -60,9 +60,9 @@ extension FeaturedViewController: UICollectionViewDataSource  {
             let movie = nowPlayingMovies[indexPath.item]
             
             Task {
-                let imageData = await Movie.downloadImageData(withPath: movie.posterPath)
+                let imageData = await Movie.downloadImageData(withPath: movie.posterPath ?? "")
                 let imagem = UIImage(data: imageData) ?? UIImage()
-                cell.setup(title: movie.title, year: String(movie.releaseDate.prefix(4)), image: imagem)
+                cell.setup(title: movie.title, year: String(movie.releaseDate?.prefix(4) ?? ""), image: imagem)
             }
             
             return cell
@@ -77,14 +77,14 @@ extension FeaturedViewController: UICollectionViewDataSource  {
             let movie = upcomingMovies[indexPath.item]
             
             let meses = ["Jan","Fev","Mar","Abr","Mai","Jun","Jul","Ago","Set","Out","Nov","Dez"]
-            var date = String(movie.releaseDate.prefix(7))
+            var date = String(movie.releaseDate!.prefix(7))
             let dateInt = Int(date.suffix(2))
-            let day = Int(movie.releaseDate.suffix(2))
+            let day = Int(movie.releaseDate!.suffix(2))
             let dateLetra = day?.codingKey.stringValue
             date = meses[dateInt ?? 0] + " " + (dateLetra ?? "")
             
             Task {
-                let imageData = await Movie.downloadImageData(withPath: movie.backdropPath)
+                let imageData = await Movie.downloadImageData(withPath: movie.backdropPath ?? "")
                 let imagem = UIImage(data: imageData) ?? UIImage()
                 cell.setup(title: movie.title, year: date, image: imagem)
             }

@@ -70,7 +70,6 @@ extension TrendingViewController: UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let movie: Movie
         movie = trendingMovies[indexPath.item]
-        print(movie)
         self.performSegue(withIdentifier: "trendingToDetailsSegue", sender: movie)
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

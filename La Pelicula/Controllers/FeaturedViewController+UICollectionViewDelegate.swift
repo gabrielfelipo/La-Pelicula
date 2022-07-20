@@ -10,7 +10,6 @@ import UIKit
 extension FeaturedViewController: UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print("jaca")
         let movie: Movie
         
         if collectionView == popularCollectionView {

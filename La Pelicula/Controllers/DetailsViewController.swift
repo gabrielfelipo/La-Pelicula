@@ -46,7 +46,6 @@ class DetailsViewController: UIViewController {
             }
             genrerLabel.text = aux
         }
-        //print(movie?.genres)
         
         overrideUserInterfaceStyle = .dark
         // Do any additional setup after loading the view.
@@ -70,11 +69,7 @@ class DetailsViewController: UIViewController {
             posterImage.layer.cornerRadius = 8
         }
         
-        
-        
-        //backdropImage.image = UIImage(named: movie.backdropPath)
         titleLabel.text = movie.title
-        //posterImage.image = UIImage(named: movie.posterPath)
         ratingLabel.text = "Rating: \(round(movie.voteAverage*10)/10)/10"
         overviewLabel.text = movie.overview
         
